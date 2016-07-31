@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/
+
+body{
+	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
+    background-color : #EFEEEE;
+
+}
+
+.content{
+    text-align : center;
+    letter-spacing : 0.05em;
+}
+
+/* nav ----------------------------------------------*/
+nav{	
+	z-index : 200;
+    font-weight : bold;
+    background-color : #EFEEEE;
+}
+.hidden{
+    display : none;
+}
+
+/* home nav */
+.leftnav a{text-decoration:none;}
+.leftnav a:link{color: #212222;}
+.leftnav a:visited { color: #212222;}　
+.leftnav a:active{color: #212222;}
+.leftnav a:hover{color: #212222;} 
+
+.rightnav a{text-decoration:none;}
+.rightnav a:link{color: #212222;}
+.rightnav a:visited { color: #212222;}　
+.rightnav a:active{color: #212222;}
+.rightnav a:hover{
+    color: #212222;
+    text-decoration : underline;
+} 
+.home_nav_label{
+    letter-spacing : 0.1em; 
+}
+.leftnav{
+    position : relative;
+    float : left;
+}
+.rightnav{
+    position : relative;
+    float : right;  
+}
+.rightnav span{
+    margin-left : 15px;
+}
+.nav_animation{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+}
+
+/* normal nav */
+.normal_leftnav a{text-decoration:none;}
+.normal_leftnav a:link{color: #212222;}
+.normal_leftnav a:visited { color: #212222;}　
+.normal_leftnav a:active{color: #212222;}
+.normal_leftnav a:hover{
+    color: #212222;
+    text-decoration : underline;
+}
+.normal_rightnav a{text-decoration:none;}
+.normal_rightnav a:link{color: #212222;}
+.normal_rightnav a:visited { color: #212222;}　
+.normal_rightnav a:active{color: #212222;}
+.normal_rightnav a:hover{ color: #212222;}
+.normal_leftnav{
+    position : relative;
+    float : left;
+}
+.normal_rightnav{
+    position : relative;
+    float : right;  
+}
+.normal_nav_title, .normal_nav_label{
+    position : relative;   
+}
+.normal_leftnav .normal_nav_title{    
+    margin-right: 20px;
+}
+
+.normal_nav_label{    
+    font-weight : normal;
+}
+.normal_leftnav .normal_nav_label{    
+    margin-right: 10px;
+}
+.normal_rightnav .normal_nav_label{    
+    /*margin-right: 10px;*/
+}
+
+
+/* home ----------------------------------------------*/
+#home{
+    position : relative;
+    padding-top : 90px;
+    padding-bottom: 50px;
+}
+#home .home_words{
+    margin : 0 auto;
+    margin-top: 25px;
+    text-align : left;
+}
+#home .home_title{
+    font-weight : bold;
+    }
+#home .home_content{
+    margin-top: 5px;
+    margin-bottom: 55px;    
+}
+#home #scroll-triangle-outer{
+    margin : 0 auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: #212222 transparent transparent transparent;
+}
+#home #scroll-triangle-inner{
+    position: relative;
+    top: -14px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0 11px;
+    border-color: #EFEEEE transparent transparent transparent;
+}
+
+/* works ----------------------------------------------*/
+#works{
+    position : relative;
+    padding-top: 100px;
+}

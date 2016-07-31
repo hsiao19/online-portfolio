@@ -1,0 +1,80 @@
+.content{
+    
+}
+
+/* nav ----------------------------------------------*/
+/* home nav */
+.HomeNav{
+	position : fixed;
+	width : 100%;
+	top : 0px;
+	height : 67px;
+}
+.home_nav_label{
+	top : 26px;
+}
+.leftnav{
+	left : 13%;
+	font-size : 13pt;
+}
+.rightnav{
+	right : 13%;
+	font-size : 12pt;
+}
+.nav_shrink{
+	max-height: 50px;
+}
+.home_nav_label_shrink{
+	top : 25px;
+}
+
+/* normal nav */
+.NormalNav{
+	position : fixed;
+	width : 100%;
+	top : 0px;
+	height : 60px;
+}
+.normal_nav{
+	top : 14px;
+}
+.normal_leftnav{
+	left : 8%;
+	font-size : 13pt;
+}
+.normal_rightnav{
+	right : 8%;
+	font-size : 12pt;
+}
+.normal_leftnav img{
+    width : 50px;
+    margin-right: 13px;
+}
+.normal_nav_label{
+    font-size : 12pt;
+}
+.normal_leftnav .normal_nav_title, .normal_leftnav .normal_nav_label{
+	top : 4px;
+}
+.normal_rightnav .normal_nav_label{
+	top : 12px;
+}
+.normal_rightnav .tw{
+	font-size : 10pt;
+}
+
+/* home ----------------------------------------------*/
+#home img{
+    width : 350px;
+}
+#home .home_words{
+	width : 350px;
+}
+#home .home_title{
+    font-size : 20pt;
+    padding-left: 20px;
+}
+#home .home_content{
+    font-size : 15pt;
+    padding-left: 20px;
+}
