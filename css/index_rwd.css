@@ -71,10 +71,63 @@
 	width : 350px;
 }
 #home .home_title{
-    font-size : 20pt;
+    font-size : 18pt;
     padding-left: 20px;
 }
 #home .home_content{
-    font-size : 15pt;
+    font-size : 14pt;
     padding-left: 20px;
+}
+
+/* works ----------------------------------------------*/
+#works{
+    padding-top: 90px;
+    width : 75%;
+}
+#works .title{
+    font-size : 19pt;
+    margin-bottom : 10px;
+    margin-left : 1%;
+}
+#works .sub_title{
+    margin-bottom : 10px;
+    margin-left : 1%;
+}
+#works .sub_title .label{
+    font-size : 13pt;
+    margin-right : 10px;
+}
+
+#works hr{
+    margin-left : 1%;
+    margin-bottom : 30px;
+}
+
+#works .block{
+    width : 31%;
+    margin-bottom : 30px;
+    margin-left : 1%;
+    margin-right : 1%;
+
+/*    width : 45%;
+    padding: 8px;
+    margin-top : 20px;
+    margin-left: 1%;
+    margin-right: 1%;*/
+}
+#works .block .project_sub_title{
+    font-size : 12pt;
+    /*padding-left : 5px;*/
+}
+#works .block .project_title{
+    font-size : 14pt;
+    /*padding-left : 5px;*/
+}
+
+
+/* footer ----------------------------------------------*/
+footer {
+    font-size : 11pt;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }

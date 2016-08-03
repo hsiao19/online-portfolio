@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/
 
 body{
@@ -9,7 +9,6 @@ body{
 
 .content{
     text-align : center;
-    letter-spacing : 0.05em;
 }
 
 /* nav ----------------------------------------------*/
@@ -93,9 +92,6 @@ nav{
 .normal_leftnav .normal_nav_label{    
     margin-right: 10px;
 }
-.normal_rightnav .normal_nav_label{    
-    /*margin-right: 10px;*/
-}
 
 
 /* home ----------------------------------------------*/
@@ -103,6 +99,7 @@ nav{
     position : relative;
     padding-top : 90px;
     padding-bottom: 50px;
+    letter-spacing : 0.05em;
 }
 #home .home_words{
     margin : 0 auto;
@@ -138,5 +135,57 @@ nav{
 /* works ----------------------------------------------*/
 #works{
     position : relative;
-    padding-top: 100px;
+    margin : 0 auto;
 }
+
+#works .title, #works .sub_title {
+    position : relative;
+    text-align : left;
+}
+#works .title{
+    font-weight : bold;
+}
+#works .sub_title .label:hover{
+    color : #939393;
+    cursor : pointer;
+}
+#works .project_list{
+    position : relative;
+    display : inline-block;
+    text-align : left;
+}
+
+#works hr{
+    text-align : left;
+    width : 97.8%;
+    background-color : #CCCCCC;
+    height : 1px;
+}
+
+#works .block,
+#works .block img{
+    border-radius : 1px;
+}
+#works .block{
+    position : relative;
+    display : inline-block;
+    text-align : left;
+    box-shadow: 0px 0px 2px #DDDDDD;
+}
+#works .block img{
+    position : relative;
+    width : 100%;
+    margin-bottom: 5px;
+}
+#works .block .project_sub_title{
+    color: #848484;
+}
+
+
+/* footer ----------------------------------------------*/
+footer {
+    color : #3D3D3D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
