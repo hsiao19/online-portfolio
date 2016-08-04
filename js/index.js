@@ -26,7 +26,6 @@ $(document).ready(function(){
     });
 
     // works filter --------------------------------------------
-    // get active label
     $('#works .sub_title .label').click(function(e){
         e.preventDefault();
         var clickedId = $(this).attr('id');
