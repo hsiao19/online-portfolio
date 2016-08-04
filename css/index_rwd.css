@@ -81,7 +81,7 @@
 
 /* works ----------------------------------------------*/
 #works{
-    padding-top: 90px;
+    padding-top: 85px;
     width : 75%;
 }
 #works .title{
@@ -108,12 +108,6 @@
     margin-bottom : 30px;
     margin-left : 1%;
     margin-right : 1%;
-
-/*    width : 45%;
-    padding: 8px;
-    margin-top : 20px;
-    margin-left: 1%;
-    margin-right: 1%;*/
 }
 #works .block .project_sub_title{
     font-size : 12pt;
@@ -128,6 +122,6 @@
 /* footer ----------------------------------------------*/
 footer {
     font-size : 11pt;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
