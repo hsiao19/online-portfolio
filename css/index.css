@@ -4,7 +4,6 @@
 body{
 	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
     background-color : #EFEEEE;
-
 }
 
 .content{
@@ -21,6 +20,7 @@ body{
     display : none;
 }
 
+
 /* nav ----------------------------------------------*/
 nav{	
     font-weight : bold;
@@ -32,42 +32,75 @@ nav{
 }
 
 /* home nav */
-.leftnav a{text-decoration:none;}
-.leftnav a:link{color: #212222;}
-.leftnav a:visited { color: #212222;}　
-.leftnav a:active{color: #212222;}
-.leftnav a:hover{color: #212222;} 
+.HomeNav{
+    position : fixed;
+    width : 100%;
+    top : 0px;
+}
+.HomeNav .leftnav a{text-decoration:none;}
+.HomeNav .leftnav a:link{color: #212222;}
+.HomeNav .leftnav a:visited { color: #212222;}　
+.HomeNav .leftnav a:active{color: #212222;}
+.HomeNav .leftnav a:hover{color: #212222;} 
 
-.rightnav a{text-decoration:none;}
-.rightnav a:link{color: #212222;}
-.rightnav a:visited { color: #212222;}　
-.rightnav a:active{color: #212222;}
-.rightnav a:hover{
+.HomeNav .rightnav a{text-decoration:none;}
+.HomeNav .rightnav a:link{color: #212222;}
+.HomeNav .rightnav a:visited { color: #212222;}　
+.HomeNav .rightnav a:active{color: #212222;}
+.HomeNav .rightnav a:hover{
     color: #212222;
     text-decoration : underline;
 } 
 .home_nav_label{
     letter-spacing : 0.1em; 
 }
-.leftnav{
+.HomeNav .leftnav{
     position : relative;
     float : left;
 }
-.rightnav{
+.HomeNav .rightnav{
     position : relative;
     float : right;  
 }
-.rightnav span{
+.HomeNav .rightnav span{
     margin-left : 15px;
+    padding-top : 20px;
+    padding-bottom: 20px;
 }
-.nav_animation{
+.HomeNav .nav_animation{
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;  
 }
 
+/* home nav RWD related */
+.HomeNav{
+    height : 60px;
+}
+.home_nav_label{
+    top : 26px;
+}
+.HomeNav .leftnav{
+    left : 13%;
+    font-size : 13pt;
+}
+.HomeNav .rightnav{
+    right : 13%;
+    font-size : 12pt;
+}
+.nav_shrink{
+    max-height: 50px;
+}
+.home_nav_label_shrink{
+    top : 25px;
+    height : 60px;
+}
+
 /* normal nav */
+#menu_icon{
+    display : none;
+}
 .normal_leftnav a{text-decoration:none;}
 .normal_leftnav a:link{color: #212222;}
 .normal_leftnav a:visited { color: #212222;}　
@@ -103,6 +136,41 @@ nav{
     margin-right: 10px;
 }
 
+/* normal nav RWD related */
+.NormalNav{
+    position : fixed;
+    width : 100%;
+    top : 0px;
+    height : 60px;
+}
+.normal_nav{
+    top : 14px;
+}
+.normal_leftnav{
+    left : 8%;
+    font-size : 13pt;
+}
+.normal_rightnav{
+    right : 8%;
+    font-size : 12pt;
+}
+.normal_leftnav img{
+    width : 50px;
+    margin-right: 13px;
+}
+.normal_nav_label{
+    font-size : 12pt;
+}
+.normal_leftnav .normal_nav_title, .normal_leftnav .normal_nav_label{
+    top : 4px;
+}
+.normal_rightnav .normal_nav_label{
+    top : 12px;
+}
+.normal_rightnav .tw{
+    font-size : 10pt;
+}
+
 
 /* home ----------------------------------------------*/
 #home{
@@ -120,27 +188,55 @@ nav{
     font-weight : bold;
     }
 #home .home_content{
-    margin-top: 5px;
-    margin-bottom: 55px;    
+    margin-top: 5px;    
+}
+#home .triangle {
+    position : relative;
+    margin : 0 auto;
+    padding: 20px;
+    width : 50px;
 }
 #home #scroll-triangle-outer{
+    position: relative;
     margin : 0 auto;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 16px 16px 0 16px;
     border-color: #212222 transparent transparent transparent;
 }
 #home #scroll-triangle-inner{
     position: relative;
-    top: -14px;
-    left: -11px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 11px 11px 0 11px;
     border-color: #EFEEEE transparent transparent transparent;
 }
+
+/* home RWD related */
+#home img{
+    width : 350px;
+}
+#home .home_words{
+    width : 350px;
+}
+#home .home_title{
+    font-size : 18pt;
+    padding-left: 20px;
+}
+#home .home_content{
+    font-size : 14pt;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+#home #scroll-triangle-outer{
+    border-width: 16px 16px 0 16px;
+}
+#home #scroll-triangle-inner{
+    top: -14px;
+    left: -11px;
+    border-width: 11px 11px 0 11px;
+}
+
 
 /* works ----------------------------------------------*/
 #works{
@@ -187,12 +283,12 @@ nav{
     position : relative;
     display : inline-block;
     text-align : left;
-    box-shadow: 0px 0px 2px #DDDDDD;
 }
 #works .block img{
     position : relative;
     width : 100%;
     margin-bottom: 5px;
+    box-shadow: 0px 0px 2px #DDDDDD;
 }
 #works .block .project_sub_title{
     color: #848484;

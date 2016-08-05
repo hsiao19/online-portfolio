@@ -7,6 +7,40 @@ $(document).ready(function(){
         navAnimation();        
     });
 
+    // rwd menu -------------------------------------------------
+    $('#menu_icon').click(function(){
+        $(this).toggleClass('open');
+        $('.homeNav .menuSelection').toggle();
+        $('.homeNav .none_clicked_nav').toggle();
+        $('.homeNav .clicked_nav').toggle();
+        $('.homeNav').toggleClass('clicked');
+        if( $('.homeNav').hasClass('clicked') ) {
+            $('.homeNav').css('background-color', '#212222');
+        }
+        else {
+            $('.homeNav').css('background-color', '#EFEEEE');
+        }
+    });
+
+    function closeRWDMenu(){
+        $('#menu_icon').removeClass('open');
+        $('.HomeNav .menuSelection').css('display', 'none');
+        $('.homeNav .none_clicked_nav').css('display', 'block');
+        $('.HomeNav .clicked_nav').css('display', 'none');
+        $('.homeNav').removeClass('clicked');
+        $('.homeNav').css('background-color', '#EFEEEE');
+    }
+    $('.HomeNav .menuSelection').click(function(){
+        closeRWDMenu();
+    });
+
+    $(window).resize(function() {
+        if($(document).width() > 690){
+            closeRWDMenu();
+        }
+    });
+
+
     // jump to section animation --------------------------------
     $('a[href^="#"]').click(function(e) {
         e.preventDefault();
@@ -18,12 +52,14 @@ $(document).ready(function(){
         });
     });
 
+
     // block fade in animation ---------------------------------
     jQuery('#works .block').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
         offset: 100,
         classToRemove: 'hidden'
     });
+
 
     // works filter --------------------------------------------
     $('#works .sub_title .label').click(function(e){
@@ -37,7 +73,8 @@ $(document).ready(function(){
         var $show = $('#works .block').filter("." + clickedId);
         $show.show();
         $('#works .block').not($show).hide();
-    });    
+    });
+
 });
 
 

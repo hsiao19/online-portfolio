@@ -17,13 +17,31 @@
     <!-- nav ________________________________________________ -->
     <!-- home nav -->
     <nav class="HomeNav">
-        <div class="leftnav home_nav_label nav_animation">
+        <div class="leftnav home_nav_label nav_animation none_clicked_nav">
+            <div>YU-TUNG, HSIAO</div>
+        </div>
+        <div class="rightnav home_nav_label nav_animation" >
+            <a href="#home"><span>HOME</span></a>
+            <a href="#works"><span>WORKS</span></a>
+            <a href=""><span>ABOUT</span></a>
+        </div>
+
+        <!-- home nav rwd menu -->
+        <div class="leftnav home_nav_label nav_animation clicked_nav">
             <div><a href="#home">YU-TUNG, HSIAO</a></div>
         </div>
-        <div class="rightnav home_nav_label nav_animation">
-            <span><a href="#home">HOME</a></span>
-            <span><a href="#works">WORKS</a></span>
-            <span><a href="#about">ABOUT</a></span>
+        <div id="menu_icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menuSelection">
+            <a href="#home"><ul>HOME</ul></a>
+            <a href="#works"><ul>WORKS</ul></a>
+            <a href=""><ul>ABOUT</ul></a>
         </div>
     </nav>
 
@@ -34,7 +52,7 @@
             <span class="normal_nav_title">YU-TUNG, HSIAO &nbsp|</span>
             <span class="normal_nav_label"><a href="#home">HOME</a></span>
             <span class="normal_nav_label"><a href="#works">WORKS</a></span>
-            <span class="normal_nav_label"><a href="#about">ABOUT</a></span>
+            <span class="normal_nav_label"><a href="">ABOUT</a></span>
         </div>
         <div class="normal_rightnav normal_nav">
             <span class="normal_nav_label tw"><a href="#">中文</a></span>
@@ -52,10 +70,14 @@
                 <div class="home_content">This is my online portfolio. </br> Thanks for visiting !</div>
             </div>
             <a href="#works">
-            <div id="scroll-triangle-outer">                
-                <div id="scroll-triangle-inner"></div>
-            </div>
-            </a>
+            <div class="triangle">
+                
+                <div id="scroll-triangle-outer">                
+                    <div id="scroll-triangle-inner"></div>
+                </div>
+                
+            </div> 
+            </a>         
         </div>
     </div>
 
