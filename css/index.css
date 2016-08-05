@@ -1,5 +1,5 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-@import url(//fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/*@import url(http://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic);*/
 
 body{
 	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
