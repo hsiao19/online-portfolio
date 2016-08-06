@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
-/*@import url(http://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic);*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body{
 	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
     background-color : #EFEEEE;
+    letter-spacing : 0.05em;
 }
 
 .content{
@@ -22,21 +22,22 @@ body{
 
 
 /* nav ----------------------------------------------*/
-nav{	
+nav{
+    position : fixed;
+    width : 100%;  
     font-weight : bold;
     background-color : #EFEEEE;
+    top : 0px;
     z-index : 200;
 }
 .activeNav{
     z-index : 201;
 }
+.clicked_nav {
+    display : none;
+}
 
 /* home nav */
-.HomeNav{
-    position : fixed;
-    width : 100%;
-    top : 0px;
-}
 .HomeNav .leftnav a{text-decoration:none;}
 .HomeNav .leftnav a:link{color: #212222;}
 .HomeNav .leftnav a:visited { color: #212222;}　
@@ -75,8 +76,14 @@ nav{
 }
 
 /* home nav RWD related */
+.HomeNav .menu_icon{
+    display : none;
+}
 .HomeNav{
-    height : 60px;
+    position : fixed;
+    width : 100%;
+    top : 0px;
+    height : 70px;
 }
 .home_nav_label{
     top : 26px;
@@ -98,14 +105,14 @@ nav{
 }
 
 /* normal nav */
-#menu_icon{
+.NormalNav .menu_icon{
     display : none;
 }
-.normal_leftnav a{text-decoration:none;}
-.normal_leftnav a:link{color: #212222;}
-.normal_leftnav a:visited { color: #212222;}　
-.normal_leftnav a:active{color: #212222;}
-.normal_leftnav a:hover{
+.NormalNav .leftnav a{text-decoration:none;}
+.NormalNav .leftnav a:link{color: #212222;}
+.NormalNav .leftnav a:visited { color: #212222;}　
+.NormalNav .leftnav a:active{color: #212222;}
+.NormalNav .leftnav a:hover{
     color: #212222;
     text-decoration : underline;
 }
@@ -114,7 +121,7 @@ nav{
 .normal_rightnav a:visited { color: #212222;}　
 .normal_rightnav a:active{color: #212222;}
 .normal_rightnav a:hover{ color: #212222;}
-.normal_leftnav{
+.NormalNav .leftnav{
     position : relative;
     float : left;
 }
@@ -125,14 +132,14 @@ nav{
 .normal_nav_title, .normal_nav_label{
     position : relative;   
 }
-.normal_leftnav .normal_nav_title{    
+.NormalNav .leftnav .normal_nav_title{    
     margin-right: 20px;
 }
 
 .normal_nav_label{    
     font-weight : normal;
 }
-.normal_leftnav .normal_nav_label{    
+.NormalNav .leftnav .normal_nav_label{    
     margin-right: 10px;
 }
 
@@ -141,12 +148,12 @@ nav{
     position : fixed;
     width : 100%;
     top : 0px;
-    height : 60px;
+    height : 65px;
 }
 .normal_nav{
-    top : 14px;
+    top : 20px;
 }
-.normal_leftnav{
+.NormalNav .leftnav{
     left : 8%;
     font-size : 13pt;
 }
@@ -154,18 +161,20 @@ nav{
     right : 8%;
     font-size : 12pt;
 }
-.normal_leftnav img{
+.NormalNav .leftnav img{
+    position : relative;
+    top : -3px;
     width : 50px;
     margin-right: 13px;
 }
 .normal_nav_label{
     font-size : 12pt;
 }
-.normal_leftnav .normal_nav_title, .normal_leftnav .normal_nav_label{
+.NormalNav .leftnav .normal_nav_title, ..NormalNav .leftnav .normal_nav_label{
     top : 4px;
 }
 .normal_rightnav .normal_nav_label{
-    top : 12px;
+    top : 8px;
 }
 .normal_rightnav .tw{
     font-size : 10pt;
@@ -213,6 +222,9 @@ nav{
 }
 
 /* home RWD related */
+#home{
+    padding-top : 90px;
+}
 #home img{
     width : 350px;
 }

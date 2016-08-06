@@ -2,35 +2,50 @@ $(document).ready(function(){
     // nav animation / change title -----------------------------
     changeTitle();
     navAnimation();
+    rwdNavChange();
     $(window).scroll(function() {
         changeTitle();
-        navAnimation();        
+        navAnimation(); 
+        rwdNavChange();
     });
 
-    // rwd menu -------------------------------------------------
-    $('#menu_icon').click(function(){
+    // rwd menu --------------------------------------------
+    if( $('nav').hasClass('clicked') ) {
+        $('.RwdNav').css('background-color', '#212222');
+    }
+    else {
+        $('.RwdNav').css('background-color', '#EFEEEE');
+    }
+    $('.RwdNav .menu_icon').click(function(){
         $(this).toggleClass('open');
-        $('.homeNav .menuSelection').toggle();
-        $('.homeNav .none_clicked_nav').toggle();
-        $('.homeNav .clicked_nav').toggle();
-        $('.homeNav').toggleClass('clicked');
-        if( $('.homeNav').hasClass('clicked') ) {
-            $('.homeNav').css('background-color', '#212222');
+        $('.RwdNav .menuSelection').toggle();
+        $('.RwdNav').toggleClass('clicked');
+
+        if( $('.RwdNav').hasClass('clicked') ) {
+            $('.RwdNav').css('background-color', '#212222');
+            $('.RwdNav .leftnav').css('color', '#fff');
+            $('.RwdNav .logo').addClass('none_display');
         }
         else {
-            $('.homeNav').css('background-color', '#EFEEEE');
+            var anchor = Math.round($(window).scrollTop());
+            var homeEnd = $('#home').offset().top + $('#home').height();
+
+            $('.RwdNav').css('background-color', '#EFEEEE');
+            $('.RwdNav .leftnav').css('color', '#000');
+            if(anchor > homeEnd){
+                $('.RwdNav .logo').removeClass('none_display');
+            }
         }
     });
 
     function closeRWDMenu(){
-        $('#menu_icon').removeClass('open');
-        $('.HomeNav .menuSelection').css('display', 'none');
-        $('.homeNav .none_clicked_nav').css('display', 'block');
-        $('.HomeNav .clicked_nav').css('display', 'none');
-        $('.homeNav').removeClass('clicked');
-        $('.homeNav').css('background-color', '#EFEEEE');
+        $('.RwdNav .menu_icon').removeClass('open');
+        $('.RwdNav .menuSelection').css('display', 'none');
+        $('.RwdNav .leftnav').css('color', '#000');
+        $('.RwdNav').removeClass('clicked');
+        $('.RwdNav').css('background-color', '#EFEEEE');
     }
-    $('.HomeNav .menuSelection').click(function(){
+    $('.RwdNav .menuSelection').click(function(){
         closeRWDMenu();
     });
 
@@ -40,6 +55,7 @@ $(document).ready(function(){
         }
     });
 
+    // normal rwd menu ------------------------------------------
 
     // jump to section animation --------------------------------
     $('a[href^="#"]').click(function(e) {
@@ -85,28 +101,28 @@ function navAnimation(){
 
     if (anchor > 0){
         $('.HomeNav').addClass('nav_shrink');
-        $('.leftnav').removeClass('home_nav_label');
-        $('.leftnav').addClass('home_nav_label_shrink');
-        $('.rightnav').removeClass('home_nav_label');
-        $('.rightnav').addClass('home_nav_label_shrink');
+        $('.HomeNav .leftnav').removeClass('home_nav_label');
+        $('.HomeNav .leftnav').addClass('home_nav_label_shrink');
+        $('.HomeNav .rightnav').removeClass('home_nav_label');
+        $('.HomeNav .rightnav').addClass('home_nav_label_shrink');
     }
     else {
-        $('.HomeNav').removeClass('nav_shrink');
-        $('.leftnav').removeClass('home_nav_label_shrink');
-        $('.leftnav').addClass('home_nav_label');
-        $('.rightnav').removeClass('home_nav_label_shrink');
-        $('.rightnav').addClass('home_nav_label');
+        $('.HomeNav .HomeNav').removeClass('nav_shrink');
+        $('.HomeNav .leftnav').removeClass('home_nav_label_shrink');
+        $('.HomeNav .leftnav').addClass('home_nav_label');
+        $('.HomeNav .rightnav').removeClass('home_nav_label_shrink');
+        $('.HomeNav .rightnav').addClass('home_nav_label');
     }
     
     if (anchor < homeEnd){
-        $('.HomeNav').removeClass('hidden');
-        $('.NormalNav').addClass('hidden');
+        $('.HomeNav').removeClass('none_display');
+        $('.NormalNav').addClass('none_display');
         $('.HomeNav').addClass('activeNav');
         $('.NormalNav').removeClass('activeNav');        
     }
     else {        
-        $('.HomeNav').addClass('hidden');
-        $('.NormalNav').removeClass('hidden');
+        $('.HomeNav').addClass('none_display');
+        $('.NormalNav').removeClass('none_display');
         $('.HomeNav').removeClass('activeNav');
         $('.NormalNav').addClass('activeNav');
     }    
@@ -121,4 +137,19 @@ function changeTitle(){
     else {        
         document.title = "Works | Yu-Tung, Hsiao";
     }    
+}
+
+function rwdNavChange(){
+    var anchor = Math.round($(window).scrollTop());
+    var homeEnd = $('#home').offset().top + $('#home').height();
+    if (anchor < homeEnd){
+        $('.RwdNav .logo').addClass('none_display');
+        $('.RwdNav .leftnav').css('top', '20px');
+    }
+    else {
+        if ( !$('.RwdNav').hasClass('clicked') ){
+            $('.RwdNav .logo').removeClass('none_display');
+            $('.RwdNav .leftnav').css('top', '17px');
+        }       
+    }  
 }
