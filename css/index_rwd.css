@@ -21,13 +21,22 @@
 
 /* menu icon */
 /* https://codepen.io/designcouch/pen/Atyop */
+.icon_click_point {
+    position: absolute;
+    float: right;
+    width : calc(8% + 40px);
+    height : 60px;
+    right : calc(4% - 20px);
+    top : 0;
+    cursor: pointer;
+}
 .menu_icon {
     width: 20px;
     height: 20px;
     position: absolute;
     float: right;
     top : 24px;
-    right : 8%;
+    right : 50%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -35,8 +44,7 @@
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
+    transition: .5s ease-in-out;    
 }
 .menu_icon span {
     background: #212222;

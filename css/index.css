@@ -130,7 +130,7 @@ nav{
     float : right;  
 }
 .normal_nav_title, .normal_nav_label{
-    position : relative;   
+    position : relative;
 }
 .NormalNav .leftnav .normal_nav_title{    
     margin-right: 20px;
@@ -150,14 +150,14 @@ nav{
     top : 0px;
     height : 65px;
 }
-.normal_nav{
+.NormalNav .normal_nav{
     top : 20px;
 }
 .NormalNav .leftnav{
     left : 8%;
     font-size : 13pt;
 }
-.normal_rightnav{
+.NormalNav .normal_rightnav{
     right : 8%;
     font-size : 12pt;
 }
@@ -167,16 +167,17 @@ nav{
     width : 50px;
     margin-right: 13px;
 }
-.normal_nav_label{
+.NormalNav .normal_nav_label{
     font-size : 12pt;
+    height: 60px;
 }
 .NormalNav .leftnav .normal_nav_title, ..NormalNav .leftnav .normal_nav_label{
     top : 4px;
 }
-.normal_rightnav .normal_nav_label{
+.NormalNav .normal_rightnav .normal_nav_label{
     top : 8px;
 }
-.normal_rightnav .tw{
+.NormalNav .normal_rightnav .tw{
     font-size : 10pt;
 }
 

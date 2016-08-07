@@ -16,8 +16,8 @@ $(document).ready(function(){
     else {
         $('.RwdNav').css('background-color', '#EFEEEE');
     }
-    $('.RwdNav .menu_icon').click(function(){
-        $(this).toggleClass('open');
+    $('.RwdNav .icon_click_point').click(function(){
+        $('.RwdNav .menu_icon').toggleClass('open');
         $('.RwdNav .menuSelection').toggle();
         $('.RwdNav').toggleClass('clicked');
 
