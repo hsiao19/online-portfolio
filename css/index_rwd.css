@@ -264,7 +264,8 @@
         margin-right : 1%;
     }
     #works .sub_title .label{
-        font-size : 11px;
+        font-size : 12pt;
+        margin-right : 10px;
     }
 }
 
