@@ -55,8 +55,6 @@ $(document).ready(function(){
         }
     });
 
-    // normal rwd menu ------------------------------------------
-
     // jump to section animation --------------------------------
     $('a[href^="#"]').click(function(e) {
         e.preventDefault();
@@ -90,6 +88,16 @@ $(document).ready(function(){
         $show.show();
         $('#works .block').not($show).hide();
     });
+
+
+    // works label slider
+    // http://www.jqueryscript.net/rotator/Simple-Text-Slider-Rotator-with-jQuery-CSS.html
+    worksSlider();
+    $(window).resize(function() {
+        worksSlider();
+    });
+    
+
 
 });
 
@@ -152,4 +160,49 @@ function rwdNavChange(){
             $('.RwdNav .leftnav').css('top', '17px');
         }       
     }  
+}
+
+function worksSlider(){
+    var labelNum = $('#works .sub_title .label').length;
+    // var divLength = $('#works .sub_title').width();
+    // var btnLength = $('#works .btn').width() + 30;
+
+    var marginLength = 15;
+    var labelLength = 0;
+
+    for (var i=0; i<labelNum; i++){
+        labelLength += $('#works .sub_title .label').eq(i).width();
+        labelLength += marginLength;
+    }
+
+    // $('#works .sub_title .slides').css('width', 'l100px');
+
+    // labelLength = labelLength + btnLength;
+
+    // if (labelLength > divLength){
+    //     $('#works #next').removeClass('none_display');
+    //     var labelIndex = labelNum -1;
+    //     var _labelLength = labelLength;
+    //     while (_labelLength > divLength){
+    //         var $lastLabel = $('#works .sub_title .label').eq(labelIndex);            
+    //         _labelLength -= $lastLabel.width();
+    //         $lastLabel.addClass('none_display');
+    //         labelIndex -= 1;
+    //     }
+    // }
+    // else{
+    //     for (var i=0; i<labelNum; i++){
+    //         $('#works .sub_title .label').eq(i).removeClass('none_display');
+    //     }
+    // }
+
+    // if( $('#works .sub_title .slides').find('.none_display').length == 0){
+    //     $('#works #next').addClass('none_display');
+    // }
+}
+
+function sliderAnimation(){
+    $('#works #next').click(function(){
+
+    });
 }
