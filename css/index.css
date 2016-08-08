@@ -394,10 +394,13 @@ nav{
 
 /* footer ----------------------------------------------*/
 footer {
-    color : #3D3D3D;
+    color : #3D3D3D;   
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+footer div{
     position: relative;
     display: block;
     font-size : 9pt;
-    padding-top: 40px;
-    padding-bottom: 30px;
 }
