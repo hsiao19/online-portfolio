@@ -342,7 +342,10 @@ nav{
 }
 #works .slides {
     position : relative;
-    width: 550px;
+    display : inline-block;
+}
+#works .slide {
+    position : relative;
     display : inline-block;
 }
 

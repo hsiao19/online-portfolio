@@ -318,6 +318,12 @@
     }
 }
 
+@media screen and (max-width: 530px) {
+    #works .sub_title .slide{
+        display : block;
+    }
+}
+
 @media screen and (max-width: 360px) {
     #works .block{
         width : 100%;
