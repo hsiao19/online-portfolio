@@ -167,7 +167,7 @@
     top : -3px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
     .RwdNav .leftnav{
         font-size : 11pt;
     }

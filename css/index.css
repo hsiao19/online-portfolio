@@ -1,5 +1,3 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-
 body{
 	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
     background-color : #EFEEEE;
@@ -313,7 +311,7 @@ nav{
 /* flash animation */
 #works .project_list {
   -vendor-animation-duration: 30s;
-/*  -vendor-animation-delay: 30s;*/
+  -vendor-animation-delay: 30s;
 }
 
 /* img hover effect */

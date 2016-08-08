@@ -1,0 +1,6 @@
+.container {
+    padding-top : 90px;
+    width : calc(84% - 126px);
+    text-align: left;
+    margin : auto;
+}
