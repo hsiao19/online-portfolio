@@ -310,6 +310,11 @@ nav{
     color: #848484;
 }
 
+/* flash animation */
+#works .project_list {
+  -vendor-animation-duration: 30s;
+/*  -vendor-animation-delay: 30s;*/
+}
 
 /* img hover effect */
 /* https://codepen.io/nxworld/pen/ZYNOBZ */
