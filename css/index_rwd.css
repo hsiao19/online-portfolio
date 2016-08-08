@@ -208,7 +208,7 @@
 
 @media screen and (max-width: 500px) {
     #home{
-        padding-top : 100px;
+        padding-top : 130px;
     }
     #home img{
         width : 250px;
@@ -235,13 +235,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
-    #home{
-        padding-top : 85px;
-    }
-    #home img{
-        width : 230px;
-    }
+@media screen and (max-width: 400px) {
     #home .home_words{
         width : 230px;
     }
@@ -261,6 +255,12 @@
         top: -12px;
         left: -9px;
         border-width: 9px 9px 0 9px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #home img{
+        width : 230px;
     }
 }
 
@@ -324,7 +324,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
     #works .block{
         width : 100%;
         margin-bottom : 20px;
@@ -335,7 +335,7 @@
         margin-left : 1%;
     }
     #works .sub_title .slide{
-        font-size : 10pt;
+        font-size : 9pt;
         margin-right : 10px;
     }
     #works hr{
