@@ -68,6 +68,8 @@ $(document).ready(function(){
 
 
     // block fade in animation ---------------------------------
+    // http://www.web2feel.com/freeby/scroll-effects/index4.html
+    // https://daneden.github.io/animate.css/
     jQuery('#works .block').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
         offset: 100,
@@ -87,6 +89,19 @@ $(document).ready(function(){
         var $show = $('#works .block').filter("." + clickedId);
         $show.show();
         $('#works .block').not($show).hide();
+
+        // flash animation -----
+        // http://www.web2feel.com/freeby/scroll-effects/index4.html
+        // https://daneden.github.io/animate.css/
+        $.fn.extend({
+            animateCss: function (animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                    $(this).removeClass('animated ' + animationName);
+                });
+            }
+        });
+        $('#works .project_list').animateCss('fadeIn');
     });
 
 });
