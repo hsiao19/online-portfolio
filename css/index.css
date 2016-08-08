@@ -342,7 +342,7 @@ nav{
 }
 #works .slides {
     position : relative;
-    width: 500px;
+    width: 550px;
 }
 
 
@@ -361,7 +361,7 @@ nav{
     margin-left : 1%;
 }
 #works .sub_title .label{
-    font-size : 13pt;
+    font-size : 12pt;
     margin-right : 10px;
 }
 

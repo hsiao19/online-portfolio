@@ -3,33 +3,6 @@
 }
 
 /* nav ----------------------------------------------*/
-/* home nav */
-@media screen and (max-width: 840px) {
-    .HomeNav .leftnav{
-        left : 9%;
-        font-size : 13pt;
-    }
-    .HomeNav .rightnav{
-        right : 9%;
-        font-size : 12pt;
-    }
-}
-
-/* rwd nav */
-.RwdNav{
-    height : 60px;
-}
-.RwdNav .leftnav{
-    position : relative;
-    left : 8%;
-    top : 20px;
-}
-.RwdNav .leftnav img{
-    position : relative;
-    width : 40px;
-    margin-right : 6px;
-    top : -3px;
-}
 
 /* menu icon */
 /* https://codepen.io/designcouch/pen/Atyop */
@@ -155,12 +128,54 @@
 .menuSelection a:active{color: #A0A0A0;}
 .menuSelection a:hover{color: #fff;}
 
+
+/* home nav */
+@media screen and (max-width: 840px) {
+    .HomeNav .leftnav{
+        left : 9%;
+        font-size : 13pt;
+    }
+    .HomeNav .rightnav{
+        right : 9%;
+        font-size : 12pt;
+    }
+}
+
 @media screen and (max-width: 690px) {
     .HomeNav, .NormalNav{
         display : none;
     }
     .RwdNav {
         display : block;
+    }
+}
+
+/* rwd nav */
+.RwdNav{
+    height : 60px;
+}
+.RwdNav .leftnav{
+    position : relative;
+    left : 8%;
+    font-size : 12pt;
+    top : 20px;
+}
+.RwdNav .leftnav img{
+    position : relative;
+    width : 40px;
+    margin-right : 6px;
+    top : -3px;
+}
+
+@media screen and (max-width: 360px) {
+    .RwdNav .leftnav{
+        font-size : 11pt;
+    }
+    .RwdNav .leftnav img{
+        position : relative;
+        width : 40px;
+        margin-right : 6px;
+        top : -3px;
     }
 }
 
@@ -220,6 +235,35 @@
     }
 }
 
+@media screen and (max-width: 360px) {
+    #home{
+        padding-top : 85px;
+    }
+    #home img{
+        width : 230px;
+    }
+    #home .home_words{
+        width : 230px;
+    }
+    #home .home_title{
+        font-size : 14pt;
+        padding-left: 0px;
+    }
+    #home .home_content{
+        font-size : 10pt;
+        padding-left: 0px;
+        margin-bottom: 15px;
+    }
+    #home #scroll-triangle-outer{
+        border-width: 14px 14px 0 14px;
+    }
+    #home #scroll-triangle-inner{
+        top: -12px;
+        left: -9px;
+        border-width: 9px 9px 0 9px;
+    }
+}
+
 /* works -----------------------------------------------*/
 @media screen and (max-width: 1200px) {
     #works .block{
@@ -248,11 +292,11 @@
         font-size : 12pt;
         margin-right : 10px;
     }
-    #works .block .project_sub_title{
-        font-size : 11pt;
-    }
     #works .block .project_title{
-        font-size : 13pt;
+        font-size : 12pt;
+    }
+    #works .block .project_sub_title{
+        font-size : 10pt;
     }
 }
 
@@ -263,9 +307,40 @@
         margin-left : 1%;
         margin-right : 1%;
     }
+    #works .title{
+        font-size : 13pt;
+        margin-bottom : 7px;
+        margin-left : 1%;
+    }
     #works .sub_title .label{
-        font-size : 12pt;
+        font-size : 11pt;
         margin-right : 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #works .block{
+        width : 100%;
+        margin-bottom : 20px;
+    }
+    #works .title{
+        font-size : 12pt;
+        margin-bottom : 3px;
+        margin-left : 1%;
+    }
+    #works .sub_title .label{
+        font-size : 10pt;
+        margin-right : 10px;
+    }
+    #works hr{
+        margin-left : 1%;
+        margin-bottom : 20px;
+    }
+    #works .block .project_title{
+        font-size : 11pt;
+    }
+    #works .block .project_sub_title{
+        font-size : 9pt;
     }
 }
 
