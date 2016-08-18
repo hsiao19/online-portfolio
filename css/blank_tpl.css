@@ -1,7 +1,6 @@
 body{
 	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
-    background-color : #EFEEEE;
-    letter-spacing : 0.05em;
+    background-color : #EFEEEE;    
 }
 
 .content{
@@ -27,6 +26,7 @@ nav{
     background-color : #EFEEEE;
     top : 0px;
     z-index : 200;
+    letter-spacing : 0.05em;
 }
 .activeNav{
     z-index : 201;

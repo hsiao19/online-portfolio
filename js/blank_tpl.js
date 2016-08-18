@@ -17,14 +17,9 @@ $(document).ready(function(){
             $('.RwdNav .logo').addClass('none_display');
         }
         else {
-            var anchor = Math.round($(window).scrollTop());
-            var homeEnd = $('#home').offset().top + $('#home').height();
-
             $('.RwdNav').css('background-color', '#EFEEEE');
             $('.RwdNav .leftnav').css('color', '#000');
-            if(anchor > homeEnd){
-                $('.RwdNav .logo').removeClass('none_display');
-            }
+            $('.RwdNav .logo').removeClass('none_display');
         }
     });
 

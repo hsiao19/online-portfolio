@@ -1,6 +1,73 @@
-.container {
-    padding-top : 90px;
-    width : calc(84% - 126px);
+/* about ---------------------------------------------- */
+#about {
     text-align: left;
     margin : auto;
+    line-height: 140%;
 }
+#about .title{
+    font-weight : bold;
+}
+#about #experience .event_content{
+    position : relative;
+    vertical-align : text-top;
+    display : inline-block;
+    width: calc(99% - 40px);
+}
+#about #experience .year{
+    position : relative;
+    width: 36px;
+}
+#about #experience .event_content_small{
+    width: calc(98% - 72px);
+}
+#about #experience .year_large{
+    width: 72px;
+}
+#about #experience .title_3th{
+    color : #3D3D3D;
+}
+
+
+/* about rwd related */
+#about {
+    font-size : 12pt;
+    padding-top : 100px;
+    width : calc(84% - 126px);
+}
+#about .title{
+    font-size : 18pt;
+    margin-bottom : 30px;
+    letter-spacing : 0.02em;
+}
+#about .block{
+    margin-bottom : 40px;
+}
+#about .title_2nd{
+    font-size : 14pt;
+    margin-bottom : 10px;
+}
+#about .event_type{
+    margin-bottom : 20px;
+}
+#about #experience .title_3th{
+    margin-bottom : 3px;
+}
+
+
+/* about RWD related --------------------------------------------- */
+@media screen and (max-width: 840px) {
+    #about .title{
+        font-size : 15pt;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #about {
+        font-size : 11pt;
+        width : 84%;
+    }
+    #about .title{
+        font-size : 13pt;
+    }
+}
+

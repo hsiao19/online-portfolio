@@ -1,5 +1,31 @@
+// string format -------------------------------------------------
+// usage : var fullName = 'Hello. My name is {0} {1}.'.format('FirstName', 'LastName');
+// http://kevintsengtw.blogspot.tw/2011/09/javascript-stringformat.html
+String.prototype.format = function ()
+{
+    var txt = this.toString();
+    for (var i = 0; i < arguments.length; i++)
+    {
+        var exp = getStringFormatPlaceHolderRegEx(i);
+        txt = txt.replace(exp, (arguments[i] == null ? "" : arguments[i]));
+    }
+    return cleanStringFormatResult(txt);
+}
+function getStringFormatPlaceHolderRegEx(placeHolderIndex)
+{
+    return new RegExp('({)?\\{' + placeHolderIndex + '\\}(?!})', 'gm')
+}
+function cleanStringFormatResult(txt)
+{
+    if (txt == null) return "";
+    return txt.replace(getStringFormatPlaceHolderRegEx("\\d+"), "");
+
+}
+
 $(document).ready(function(){
-    // nav animation / change title -----------------------------
+    setLandingPageHeight();
+
+    // nav animation / change site title -----------------------------
     changeTitle();
     navAnimation();
     rwdNavChange();
@@ -9,7 +35,7 @@ $(document).ready(function(){
         rwdNavChange();
     });
 
-    // rwd menu --------------------------------------------
+    // rwd menu -------------------------------------------------
     if( $('nav').hasClass('clicked') ) {
         $('.RwdNav').css('background-color', '#212222');
     }
@@ -167,22 +193,12 @@ function rwdNavChange(){
     }  
 }
 
-function worksSlider(){
-    var labelNum = $('#works .sub_title .label').length;
-    // var divLength = $('#works .sub_title').width();
-    // var btnLength = $('#works .btn').width() + 30;
-
-    var marginLength = 15;
-    var labelLength = 0;
-
-    for (var i=0; i<labelNum; i++){
-        labelLength += $('#works .sub_title .label').eq(i).width();
-        labelLength += marginLength;
+function setLandingPageHeight(){
+    if ($('#home').height() < $(window).height()){
+        var initHeight = parseInt($('#home').css("padding-top").replace("px", ""));
+        var navHeight = $('nav').height();
+        var heightAdjustment = ($(window).height() - $('#home').height()) / 2;
+        $('#home').css("padding-top", "{0}px".format(heightAdjustment + navHeight/4));
+        $('#home').css("padding-bottom", "{0}px".format(heightAdjustment));
     }
-}
-
-function sliderAnimation(){
-    $('#works #next').click(function(){
-
-    });
 }
