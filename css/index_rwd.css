@@ -331,6 +331,9 @@
         margin-left : 1%;
         margin-right : 1%;
     }
+    #works .sub_title .slide{
+        display : block;
+    }
     #works .title{
         font-size : 13pt;
         margin-bottom : 7px;
@@ -339,15 +342,12 @@
     #works .sub_title .slide{
         font-size : 11pt;
         margin-right : 10px;
-    }
-    #works .sub_title .slide{
-        display : block;
-    }
+    }    
     #works .block .project_title{
-        font-size : 12pt;
+        font-size : 11pt;
     }
     #works .block .project_sub_title{
-        font-size : 10pt;
+        font-size : 9pt;
     }
 }
 
