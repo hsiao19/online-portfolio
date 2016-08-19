@@ -2,10 +2,14 @@
 #about {
     text-align: left;
     margin : auto;
-    line-height: 140%;
+    line-height: 180%;
 }
 #about .title{
     font-weight : bold;
+}
+#about .edu {
+
+    padding-left: 20px;
 }
 #about #experience .event_content{
     position : relative;
