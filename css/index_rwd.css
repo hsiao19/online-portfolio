@@ -316,6 +316,12 @@
         font-size : 11pt;
         margin-right : 10px;
     }
+    #works .block .project_title{
+        font-size : 12pt;
+    }
+    #works .block .project_sub_title{
+        font-size : 10pt;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -336,6 +342,12 @@
     }
     #works .sub_title .slide{
         display : block;
+    }
+    #works .block .project_title{
+        font-size : 12pt;
+    }
+    #works .block .project_sub_title{
+        font-size : 10pt;
     }
 }
 
