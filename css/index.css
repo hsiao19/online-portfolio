@@ -2,6 +2,7 @@ body{
 	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
     background-color : #EFEEEE;
     letter-spacing : 0.05em;
+    -webkit-text-size-adjust:100%;
 }
 
 .content{

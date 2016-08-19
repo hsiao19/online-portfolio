@@ -123,7 +123,7 @@
 
 
 /* about RWD related --------------------------------------------- */
-@media screen and (min-width: 690px) and (max-width: 840px) {
+@media screen and (max-width: 840px) {
     #about {
         width : 84%;
         font-size : 11pt;
@@ -153,7 +153,7 @@
 }
 
 /* skill bar RWD related */
-@media screen and (min-width: 800px) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .section {
         width : 46%;    
     }

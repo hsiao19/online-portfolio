@@ -1,6 +1,7 @@
 body{
 	font-family : 'Calibri', 'Noto Sans TC', sans-serif;
-    background-color : #EFEEEE;    
+    background-color : #EFEEEE;
+    -webkit-text-size-adjust:100%;
 }
 
 .content{
