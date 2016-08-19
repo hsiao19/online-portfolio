@@ -125,8 +125,9 @@
 /* about RWD related --------------------------------------------- */
 @media screen and (max-width: 840px) {
     #about {
-        font-size : 11pt;
         width : 84%;
+        font-size : 11pt;
+        
     }
     #about .title{
         font-size : 15pt;
@@ -138,16 +139,16 @@
 }
 
 @media screen and (max-width: 690px) {
-    #about {
-        font-size : 9.5pt;
+    #about {        
         width : 84%;
+        font-size : 9.5pt;
     }
     #about .title{
         font-size : 13pt;
     }    
     #about .title_2nd{
-        font-size : 11pt;
         margin-bottom : 10px;
+        font-size : 11pt;
     }    
 }
 
