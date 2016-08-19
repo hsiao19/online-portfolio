@@ -319,6 +319,21 @@
 }
 
 @media screen and (max-width: 530px) {
+    #works .block{
+        width : 98%;
+        margin-bottom : 30px;
+        margin-left : 1%;
+        margin-right : 1%;
+    }
+    #works .title{
+        font-size : 13pt;
+        margin-bottom : 7px;
+        margin-left : 1%;
+    }
+    #works .sub_title .slide{
+        font-size : 11pt;
+        margin-right : 10px;
+    }
     #works .sub_title .slide{
         display : block;
     }

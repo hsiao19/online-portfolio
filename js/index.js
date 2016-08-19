@@ -195,10 +195,8 @@ function rwdNavChange(){
 
 function setLandingPageHeight(){
     if ($('#home').height() < $(window).height()){
-        var initHeight = parseInt($('#home').css("padding-top").replace("px", ""));
-        var navHeight = $('nav').height();
         var heightAdjustment = ($(window).height() - $('#home').height()) / 2;
-        $('#home').css("padding-top", "{0}px".format(heightAdjustment + navHeight/4));
+        $('#home').css("padding-top", "{0}px".format(heightAdjustment * 1.2));
         $('#home').css("padding-bottom", "{0}px".format(heightAdjustment));
     }
 }
