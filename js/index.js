@@ -24,6 +24,9 @@ function cleanStringFormatResult(txt)
 
 $(document).ready(function(){
     setLandingPageHeight();
+    $(window).resize(function() {
+        setLandingPageHeight();
+    });
 
     // nav animation / change site title -----------------------------
     changeTitle();
@@ -194,9 +197,11 @@ function rwdNavChange(){
 }
 
 function setLandingPageHeight(){
-    if ($('#home').height() < $(window).height()){
-        var heightAdjustment = ($(window).height() - $('#home').height()) / 2;
-        $('#home').css("padding-top", "{0}px".format(heightAdjustment * 1.2));
+    var winHeight = $(window).height();
+    var homeContentHeight = $('#home img').height() + $('#home .home_words').height();
+    if (homeContentHeight < winHeight){
+        var heightAdjustment = (winHeight - homeContentHeight) / 2;
+        $('#home').css("padding-top", "{0}px".format(heightAdjustment * 1.1));
         $('#home').css("padding-bottom", "{0}px".format(heightAdjustment));
     }
 }
