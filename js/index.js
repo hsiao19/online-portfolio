@@ -1,22 +1,18 @@
 // string format -------------------------------------------------
 // usage : var fullName = 'Hello. My name is {0} {1}.'.format('FirstName', 'LastName');
 // http://kevintsengtw.blogspot.tw/2011/09/javascript-stringformat.html
-String.prototype.format = function ()
-{
+String.prototype.format = function () {
     var txt = this.toString();
-    for (var i = 0; i < arguments.length; i++)
-    {
+    for (var i = 0; i < arguments.length; i++) {
         var exp = getStringFormatPlaceHolderRegEx(i);
         txt = txt.replace(exp, (arguments[i] == null ? "" : arguments[i]));
     }
     return cleanStringFormatResult(txt);
 }
-function getStringFormatPlaceHolderRegEx(placeHolderIndex)
-{
+function getStringFormatPlaceHolderRegEx(placeHolderIndex) {
     return new RegExp('({)?\\{' + placeHolderIndex + '\\}(?!})', 'gm')
 }
-function cleanStringFormatResult(txt)
-{
+function cleanStringFormatResult(txt) {
     if (txt == null) return "";
     return txt.replace(getStringFormatPlaceHolderRegEx("\\d+"), "");
 
@@ -95,6 +91,16 @@ $(document).ready(function(){
         });
     });
 
+    // switch language -----------------------------------------
+    $('.tw').hide();
+    $('#tw_btn').click(function(){
+        $('.en').hide();
+        $('.tw').show();
+    });
+    $('#en_btn').click(function(){
+        $('.en').show();
+        $('.tw').hide();
+    });
 
     // block fade in animation ---------------------------------
     // http://www.web2feel.com/freeby/scroll-effects/index4.html

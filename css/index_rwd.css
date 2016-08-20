@@ -295,6 +295,9 @@
     #works .block .project_title{
         font-size : 12pt;
     }
+    #works .block .tw{
+        font-size : 10pt;
+    }
     #works .block .project_sub_title{
         font-size : 10pt;
     }
@@ -315,12 +318,6 @@
     #works .sub_title .slide{
         font-size : 11pt;
         margin-right : 10px;
-    }
-    #works .block .project_title{
-        font-size : 12pt;
-    }
-    #works .block .project_sub_title{
-        font-size : 10pt;
     }
 }
 
@@ -346,6 +343,9 @@
     #works .block .project_title{
         font-size : 11pt;
     }
+    #works .block .tw{
+        font-size : 9pt;
+    }
     #works .block .project_sub_title{
         font-size : 9pt;
     }
@@ -368,12 +368,6 @@
     #works hr{
         margin-left : 1%;
         margin-bottom : 20px;
-    }
-    #works .block .project_title{
-        font-size : 11pt;
-    }
-    #works .block .project_sub_title{
-        font-size : 9pt;
     }
 }
 

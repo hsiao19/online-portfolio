@@ -27,9 +27,9 @@
             <span class="normal_nav_label"><a href="">ABOUT</a></span>
         </div>
         <div class="normal_rightnav normal_nav">
-            <span class="normal_nav_label tw"><a href="#">中文</a></span>
+            <span class="normal_nav_label tw_btn" id="tw_btn">中文</span>
             <span class="normal_nav_label">/</span>
-            <span class="normal_nav_label en"><a href="#">EN</a></span>
+            <span class="normal_nav_label en_btn" id="en_btn">EN</span>
         </div>
     </nav>
 
@@ -60,9 +60,13 @@
     <div class="content" id="about">
         <div class="container">
             <div class="title">ABOUT</div>
-            <div class="block intro">
-                My name is Yu-Tung, Hsiao.</br>
+            <div class="block intro en">
+                Hi, my name is Yu-Tung, Hsiao.</br>
                 I am a college student of National Chang-Chi University (NCCU).
+            </div>
+            <div class="block intro tw">
+                嗨! 我是蕭宇彤</br>
+                我現在是政治大學的學生
             </div>
 
             <!-- Education _______________ -->
@@ -71,20 +75,28 @@
                 <ul class="edu">
                     <li type="square">
                         <div class="event_type">
-                            <div class="title_3th">Bachelor of Science, major</div>
-                            <div class="block_content">
+                            <div class="block_content en">
+                                Bachelor of Science, major </br>
                                 Department of Management Information System, </br>
-                                National Chang-Chi University,</br>
+                                National Chang-Chi University, </br>
+                                Sept., 2012 –
+                            </div>
+                            <div class="block_content tw">
+                                國立政治大學 資訊管理學系, 主修 </br>
                                 Sept., 2012 –
                             </div>
                         </div>
                     </li>
                     <li type="square">
                         <div class="event_type">
-                            <div class="title_3th">Bachelor of Science, double major</div>
-                            <div class="block_content">
+                            <div class="block_content en">
+                                Bachelor of Science, double major </br>
                                 Digital Contents and Technologies, </br>
-                                National Chang-Chi University,</br>
+                                National Chang-Chi University, </br>
+                                Sept., 2013 –
+                            </div>
+                            <div class="block_content tw">
+                                國立政治大學 數位內容學程, 雙主修</br>
                                 Sept., 2013 –
                             </div>
                         </div>
@@ -100,27 +112,33 @@
                     <div class="title_3th">Digital Creative Experience</div>
                     <div class="event">
                         <div class="year event_content">2016</div>
-                        <div class="event_content">Curator, OpenHCI - Student-organized workshop on Human-Computer Interaction.</div>
+                        <div class="event_content en">OpenHCI, Student-Organized Workshop on Human-Computer Interaction - Curator</div>
+                        <div class="event_content tw">OpenHCI 人機互動工作坊 - 策展</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2015</div>
-                        <div class="event_content">Workshop member, OpenHCI - Student-organized workshop on Human-Computer Interaction.</div>
+                        <div class="event_content en">OpenHCI, Student-Organized Workshop on Human-Computer Interaction - Workshop member</div>
+                        <div class="event_content tw">OpenHCI 人機互動工作坊 - 工作坊學員</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2015</div>
-                        <div class="event_content">Creator, Digital Art Project “Secret Wall”, National Taiwan University Art Festival.</div>
+                        <div class="event_content en">Digital Art Project “Secret Wall”, 21th National Taiwan University Art Festival - Creator</div>
+                        <div class="event_content tw">第21屆台大藝術季數位創作 "秘密牆" - 專案負責人/創作者</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2015</div>
-                        <div class="event_content">Creator, Digital Art Project “Space”, National Taiwan University Art Festival.</div>
+                        <div class="event_content en">Digital Art Project “Space”, 21th National Taiwan University Art Festival - Creator</div>
+                        <div class="event_content tw">第21屆台大藝術季數位創作 "一節空堂" - 專案負責人/創作者</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2015</div>
-                        <div class="event_content">Creator, Digital Art Project “Live House”, NCCU Digital Contents Graduate Exhibition.</div>
+                        <div class="event_content en">Digital Art Project “Live House”, NCCU Digital Contents Graduate Exhibition - Creator</div>
+                        <div class="event_content tw">第三屆政大數位內容畢業製作 "Live House" - 創作者</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2015</div>
-                        <div class="event_content">Creator, Digital Art Project “Live House 2.0”, NCCU Digital Contents Exhibition.</div>
+                        <div class="event_content en">Digital Art Project “Live House 2.0”, NCCU Digital Contents Exhibition - Creator</div>
+                        <div class="event_content tw">DCT進行式, 政大數位內容松菸展演 “Live House 2.0” - 創作者</div>
                     </div>
                 </div>
 
@@ -128,11 +146,13 @@
                     <div class="title_3th">Programming Experience</div>
                     <div class="event">
                         <div class="year_large event_content">2014-16</div>
-                        <div class="event_content_small">Programming intern, Nuwa Information Ltd.</div>
+                        <div class="event_content_small en">Nuwa Information Ltd. - Programming intern</div>
+                        <div class="event_content_small tw">女媧科技有限公司 - 程式開發實習生</div>
                     </div>
                     <div class="event">
                         <div class="year_large event_content">2015-16</div>
-                        <div class="event_content_small">System developer, Decision Support System, NCCU industry cooperation project.</div>
+                        <div class="event_content_small en">Decision Support System, NCCU industry cooperation project - System developer</div>
+                        <div class="event_content_small tw">政大產學合作專案"訂貨決策系統" - 系統開發</div>
                     </div>
                 </div>
 
@@ -140,11 +160,13 @@
                     <div class="title_3th">Graphic Design Experience</div>
                     <div class="event">
                         <div class="year event_content">2014</div>
-                        <div class="event_content">Layout design, Department of Radio and Television Graduate Exhibition, NCCU.</div>
+                        <div class="event_content en">NCCU Department of Radio and Television Graduate Exhibition - Layout design</div>
+                        <div class="event_content tw">第23屆政大廣電畢展 - 文宣排版設計</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2014</div>
-                        <div class="event_content">Design, Career month, NCCU.</div>
+                        <div class="event_content en">Career month, NCCU - Design</div>
+                        <div class="event_content tw">政大徵才月 - 文宣設計</div>
                     </div>
                 </div>
 
@@ -152,19 +174,23 @@
                     <div class="title_3th">Exhibition Volunteer, Part-Time Job</div>
                     <div class="event">
                         <div class="year event_content">2015</div>
-                        <div class="event_content">Taipei Digital Art Festival.</div>
+                        <div class="event_content en">Taipei Digital Art Festival.</div>
+                        <div class="event_content tw">台北數位藝術節</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2014</div>
-                        <div class="event_content">Taiwan Designers' Week.</div>
+                        <div class="event_content en">Taiwan Designers' Week.</div>
+                        <div class="event_content tw">台灣設計師週</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2014</div>
-                        <div class="event_content">Treasure Hill, Taipei Art Village.</div>
+                        <div class="event_content en">Treasure Hill, Taipei Art Village.</div>
+                        <div class="event_content tw">寶藏巖國際藝術村</div>
                     </div>
                     <div class="event">
                         <div class="year event_content">2014</div>
-                        <div class="event_content">Very Fun Park, Taipei contemporary art exhibition.</div>
+                        <div class="event_content en">Very Fun Park, Taipei contemporary art exhibition.</div>
+                        <div class="event_content tw">粉樂町東區當代藝術展</div>
                     </div>
                 </div>
             </div>

@@ -142,6 +142,10 @@ nav{
     margin-right: 10px;
 }
 
+.NormalNav .tw_btn, .NormalNav .en_btn {
+    cursor : pointer;
+}
+
 /* normal nav RWD related */
 .NormalNav{
     position : fixed;
@@ -176,7 +180,7 @@ nav{
 .NormalNav .normal_rightnav .normal_nav_label{
     top : 8px;
 }
-.NormalNav .normal_rightnav .tw{
+.NormalNav .normal_rightnav .tw_btn{
     font-size : 10pt;
 }
 
@@ -389,6 +393,11 @@ nav{
     position: relative;
     display: block;
     font-size : 13pt;
+}
+#works .block .tw{
+    position: relative;
+    display: block;
+    font-size : 10.65pt;
 }
 #works .block .project_sub_title{
     position: relative;

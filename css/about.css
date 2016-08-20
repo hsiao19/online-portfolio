@@ -112,6 +112,9 @@
 #about #experience .title_3th{
     margin-bottom : 3px;
 }
+#about .tw{
+    font-size : 10.5pt;
+}
 
 /* skill bar */
 .section {
@@ -149,7 +152,10 @@
     #about .title_2nd{
         margin-bottom : 10px;
         font-size : 11pt;
-    }    
+    }
+    #about .tw{
+        font-size : 8.5pt;
+    }   
 }
 
 /* skill bar RWD related */
