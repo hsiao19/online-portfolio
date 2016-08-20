@@ -171,12 +171,12 @@
     width : 75%;
     margin-top : 13px;
     margin-bottom : 2px;
-    background-color : #5B5B5B;
+    background-color : #4C4C4C;
     height : 1px;
     box-shadow:inset 1px 1px 1px rgba(10%, 10%, 10%, 0.5);
 }
 .RwdNav .langBtn{
-    color : #848484;
+    color : #606060;
     padding-right: 10px;
     margin-right : 5px;
 }
