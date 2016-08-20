@@ -112,9 +112,6 @@ nav{
 .NormalNav .normal_rightnav .tw_btn{
     font-size : 10pt;
 }
-.NormalNav .tw_btn, .NormalNav .en_btn {
-    cursor : pointer;
-}
 
 /* RWD nav --------- */
 
@@ -257,6 +254,28 @@ nav{
     width : 40px;
     margin-right : 6px;
     top : -3px;
+}
+.RwdNav hr{
+    text-align : left;
+    width : 75%;
+    margin-top : 15px;
+    margin-bottom : 8px;
+    background-color : #333333;
+    height : 1px;
+}
+.RwdNav .langBtn{
+    color : #565656;
+    padding-right: 10px;
+    margin-right : 5px;
+}
+.RwdNav .langBtn:hover{
+    color : #D6D6D6;
+}
+.RwdNav .tw_btn{
+    font-size : 8pt;
+}
+.tw_btn, .en_btn {
+    cursor : pointer;
 }
 
 @media screen and (max-width: 690px) {

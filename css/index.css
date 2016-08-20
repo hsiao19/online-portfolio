@@ -142,7 +142,7 @@ nav{
     margin-right: 10px;
 }
 
-.NormalNav .tw_btn, .NormalNav .en_btn {
+.tw_btn, .en_btn {
     cursor : pointer;
 }
 

@@ -113,7 +113,7 @@
     margin-bottom : 3px;
 }
 #about .tw{
-    font-size : 10.5pt;
+    font-size : 10pt;
 }
 
 /* skill bar */
@@ -132,6 +132,9 @@
         font-size : 11pt;
         
     }
+    #about .tw{
+        font-size : 9.5pt;
+    } 
     #about .title{
         font-size : 15pt;
     }
@@ -146,16 +149,16 @@
         width : 84%;
         font-size : 9.5pt;
     }
+    #about .tw{
+        font-size : 8pt;
+    }  
     #about .title{
         font-size : 13pt;
     }    
     #about .title_2nd{
         margin-bottom : 10px;
         font-size : 11pt;
-    }
-    #about .tw{
-        font-size : 8.5pt;
-    }   
+    }     
 }
 
 /* skill bar RWD related */

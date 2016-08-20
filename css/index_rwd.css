@@ -166,6 +166,25 @@
     margin-right : 6px;
     top : -3px;
 }
+.RwdNav hr{
+    text-align : left;
+    width : 75%;
+    margin-top : 15px;
+    margin-bottom : 8px;
+    background-color : #333333;
+    height : 1px;
+}
+.RwdNav .langBtn{
+    color : #565656;
+    padding-right: 10px;
+    margin-right : 5px;
+}
+.RwdNav .langBtn:hover{
+    color : #D6D6D6;
+}
+.RwdNav .tw_btn{
+    font-size : 8pt;
+}
 
 @media screen and (max-width: 400px) {
     .RwdNav .leftnav{

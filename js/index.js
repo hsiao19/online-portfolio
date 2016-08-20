@@ -93,11 +93,11 @@ $(document).ready(function(){
 
     // switch language -----------------------------------------
     $('.tw').hide();
-    $('#tw_btn').click(function(){
+    $('.tw_btn').click(function(){
         $('.en').hide();
         $('.tw').show();
     });
-    $('#en_btn').click(function(){
+    $('.en_btn').click(function(){
         $('.en').show();
         $('.tw').hide();
     });
