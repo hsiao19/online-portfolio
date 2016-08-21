@@ -1,0 +1,234 @@
+/* general */
+.work_intro{
+    text-align: left;
+    margin : auto;
+    line-height: 22px;
+    font-weight : normal;
+}
+
+/* intro */
+.work_intro .title, .work_intro .title_2nd{
+    font-weight : bold;
+}
+.work_intro .main_pic, .work_intro .pic{
+    position : relative;
+    width : 100%;
+}
+
+/* block2 */
+.work_intro .block2{
+    position : relative;
+    margin : 0 auto;
+}
+.work_intro .block2 .title_2nd{
+    position : relative;
+    font-weight : normal;
+}
+.work_intro .block2 video{
+    position : relative;
+    width : 100%;
+    margin-bottom: 30px;
+}
+
+/* intro detail */
+.work_intro .intro_detail{
+    position : relative;
+    margin : 0 auto;
+}
+.work_intro .intro_detail hr{
+    text-align : left;
+    width : 100%;
+    background-color : #CCCCCC;
+    height : 1px;
+}
+.work_intro .intro_detail .item_title, .work_intro .intro_detail .item_content {
+    position : relative;
+    display : inline-block;
+    vertical-align : text-top;
+}
+.work_intro .intro_detail .item .credit {
+    position : relative;
+    display : block;
+    padding-bottom: 5px;
+}
+
+
+/* rwd related --------------------------------*/
+/* general */
+.work_intro {
+    font-size : 12pt;
+    padding-top : 120px;
+    width : 70%;
+}
+
+/* intro */
+.work_intro .title{
+    font-size : 21pt;
+    margin-bottom : 4px;
+}
+.work_intro .sub_title{
+    font-size : 11pt;
+}
+.work_intro .main_pic{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.work_intro .intro{
+    margin-bottom : 90px;
+}
+.work_intro .intro_tw{
+    font-size : 11pt;
+}
+
+/* block2 */
+.work_intro .block2{
+    width : 600px;
+}
+.work_intro .block2 .title_2nd{
+    margin-bottom : 10px;
+}
+.work_intro .block2 .title_2nd_tw{
+    font-size : 11pt;
+}
+.work_intro .block2 video{
+    margin-bottom: 30px;
+}
+.work_intro .block2 .pic{
+    margin-bottom: 30px;
+}
+
+/* intro detail */
+.work_intro .intro_detail{
+    width : 600px;
+    margin-top : 60px;
+    margin-bottom : 50px;
+}
+.work_intro .intro_detail .item_title {
+    margin-left : 20px;
+    width :100px;
+}
+.work_intro .intro_detail .item_title_tw {
+    margin-left : 20px;
+    width :100px;
+}
+.work_intro .intro_detail .item_content, .work_intro .intro_detail .item_content_tw {
+    width : calc(100% - 140px);
+}
+.work_intro .intro_detail hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.work_intro .intro_detail_tw{
+    font-size : 11pt;
+}
+
+@media screen and (max-width: 900px) {
+    .work_intro .block2{
+        width : 100%;
+    }
+    .work_intro .intro_detail{
+        width : 100%;
+    }
+}
+@media screen and (max-width: 840px) {
+    /* general */
+    .work_intro {
+        width : 84%;
+        padding-top : 100px;
+        font-size : 11pt;        
+    }
+
+    /* intro */
+    .work_intro .title{
+        font-size : 17pt;
+        margin-bottom : 1px;
+    }
+    .work_intro .sub_title{
+        font-size : 9.5pt;
+    }
+    .work_intro .main_pic{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .work_intro .intro{
+        margin-bottom : 70px;
+    }
+    .work_intro .intro_tw{
+        font-size : 10pt;
+    }
+
+    /* block2 */
+    .work_intro .block2 .title_2nd_tw{
+        font-size : 10pt;
+    }
+
+    /* intro detail */
+    .work_intro .intro_detail_tw{
+        font-size : 10pt;
+    }
+}
+
+
+
+@media screen and (max-width: 690px) {
+    /* general */
+    .work_intro {
+        padding-top : 85px;
+        font-size : 9.5pt; 
+    }
+
+    /* intro */
+    .work_intro .title{
+        font-size : 15pt;
+        margin-bottom : 1px;
+    }
+    .work_intro .sub_title{
+        font-size : 8.5pt;
+    }
+    .work_intro .main_pic{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .work_intro .intro{
+        margin-bottom : 65px;
+    }
+    .work_intro .intro_tw{
+        font-size : 9pt;
+    }
+
+    /* block2 */
+    .work_intro .block2 .title_2nd_tw{
+        font-size : 10pt;
+    }
+    .work_intro .block2 video{
+        margin-bottom: 10px;
+    }
+    .work_intro .block2 .pic{
+        margin-bottom: 10px;
+    }
+
+    /* intro detail */
+    .work_intro .intro_detail{
+        margin-top : 50px;
+        margin-bottom : 30px;
+    }
+    .work_intro .intro_detail_tw{
+        font-size : 9pt;
+    }
+    .work_intro .intro_detail .item_title {
+        margin-left : 2%;
+        width :80px;
+    }
+    .work_intro .intro_detail .item_title_tw {
+        margin-left : 2%;
+        width :60px;
+    }
+    .work_intro .intro_detail .item_content {
+        width : calc(96% - 80px);
+    }
+    .work_intro .intro_detail .item_content_tw {
+        width : calc(96% - 60px);
+    }
+}
+}

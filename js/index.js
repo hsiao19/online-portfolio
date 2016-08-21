@@ -94,10 +94,20 @@ $(document).ready(function(){
     // switch language -----------------------------------------
     $('.tw').hide();
     $('.tw_btn').click(function(){
+        var anchor = Math.round($(window).scrollTop());
+        var homeEnd = $('#home').offset().top + $('#home').height();
+        if(anchor > homeEnd){
+            $('.RwdNav .logo').removeClass('none_display');
+        }
         $('.en').hide();
-        $('.tw').show();
+        $('.tw').show();        
     });
     $('.en_btn').click(function(){
+        var anchor = Math.round($(window).scrollTop());
+        var homeEnd = $('#home').offset().top + $('#home').height();
+        if(anchor > homeEnd){
+            $('.RwdNav .logo').removeClass('none_display');
+        }
         $('.en').show();
         $('.tw').hide();
     });
@@ -106,7 +116,7 @@ $(document).ready(function(){
     // http://www.web2feel.com/freeby/scroll-effects/index4.html
     // https://daneden.github.io/animate.css/
     jQuery('#works .block').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeIn',
+        classToAdd: 'visible animated fadeInUp',
         offset: 100,
         classToRemove: 'hidden'
     });

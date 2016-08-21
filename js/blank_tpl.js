@@ -43,12 +43,23 @@ $(document).ready(function(){
     // switch language -----------------------------------------
     $('.tw').hide();
     $('.tw_btn').click(function(){
+        $('.RwdNav .logo').removeClass('none_display');
         $('.en').hide();
         $('.tw').show();
     });
     $('.en_btn').click(function(){
+        $('.RwdNav .logo').removeClass('none_display');
         $('.en').show();
         $('.tw').hide();
+    });
+
+    // block fade in animation ---------------------------------
+    // http://www.web2feel.com/freeby/scroll-effects/index4.html
+    // https://daneden.github.io/animate.css/
+    jQuery('.work_intro .block').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100,
+        classToRemove: 'hidden'
     });
 
 });

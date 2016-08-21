@@ -174,7 +174,7 @@ nav{
     font-size : 12pt;
     height: 60px;
 }
-.NormalNav .leftnav .normal_nav_title, ..NormalNav .leftnav .normal_nav_label{
+.NormalNav .leftnav .normal_nav_title, .NormalNav .leftnav .normal_nav_label{
     top : 4px;
 }
 .NormalNav .normal_rightnav .normal_nav_label{
@@ -291,6 +291,13 @@ nav{
     position: relative;
     width: 100%;
 }
+
+#works .project_list a{text-decoration:none;}
+#works .project_list a:link{color: #000;}
+#works .project_list a:visited { color: #000;}　
+#works .project_list a:active{color: #000;}
+#works .project_list a:hover{color: #000;} 
+
 #works .block,
 #works .block img{
     border-radius : 1px;
@@ -410,7 +417,7 @@ nav{
 footer {
     color : #3D3D3D;   
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 footer div{
