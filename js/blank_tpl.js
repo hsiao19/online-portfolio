@@ -41,7 +41,7 @@ $(document).ready(function(){
     });
 
     // switch language -----------------------------------------
-    $('.tw').hide();
+    $('.en').hide();
     $('.tw_btn').click(function(){
         $('.RwdNav .logo').removeClass('none_display');
         $('.en').hide();

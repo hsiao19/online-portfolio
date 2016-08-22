@@ -92,7 +92,7 @@ $(document).ready(function(){
     });
 
     // switch language -----------------------------------------
-    $('.tw').hide();
+    $('.en').hide();
     $('.tw_btn').click(function(){
         var anchor = Math.round($(window).scrollTop());
         var homeEnd = $('#home').offset().top + $('#home').height();

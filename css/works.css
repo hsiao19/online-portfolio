@@ -5,7 +5,9 @@
     line-height: 22px;
     font-weight : normal;
 }
-
+.center{
+    text-align : center;
+}
 /* intro */
 .work_intro .title, .work_intro .title_2nd{
     font-weight : bold;
@@ -14,6 +16,11 @@
     position : relative;
     width : 100%;
 }
+.work_intro .intro a{text-decoration:underline;}
+.work_intro .intro a:link{color: #000;}
+.work_intro .intro a:visited { color: #000;}　
+.work_intro .intro a:active{color: #000;}
+.work_intro .intro a:hover{color: #000;} 
 
 /* block2 */
 .work_intro .block2{
@@ -49,7 +56,7 @@
 .work_intro .intro_detail .item .credit {
     position : relative;
     display : block;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 
@@ -64,7 +71,11 @@
 /* intro */
 .work_intro .title{
     font-size : 21pt;
-    margin-bottom : 4px;
+    margin-bottom : 6px;
+}
+.work_intro .title_tw{
+    font-size : 18pt;
+    margin-bottom : 6px;
 }
 .work_intro .sub_title{
     font-size : 11pt;
@@ -77,8 +88,14 @@
 .work_intro .intro{
     margin-bottom : 90px;
 }
+.work_intro .intro_no_main_pic{
+    margin-top : 50px;
+}
 .work_intro .intro_tw{
     font-size : 11pt;
+}
+.work_intro .no_main_pic_intro{
+    margin-top : 20px;
 }
 
 /* block2 */
@@ -142,7 +159,11 @@
     /* intro */
     .work_intro .title{
         font-size : 17pt;
-        margin-bottom : 1px;
+        margin-bottom : 3px;
+    }
+    .work_intro .title_tw{
+        font-size : 15pt;
+        margin-bottom : 3px;
     }
     .work_intro .sub_title{
         font-size : 9.5pt;
@@ -153,6 +174,9 @@
     }
     .work_intro .intro{
         margin-bottom : 70px;
+    }
+    .work_intro .intro_no_main_pic{
+        margin-top : 30px;
     }
     .work_intro .intro_tw{
         font-size : 10pt;
@@ -182,6 +206,10 @@
     .work_intro .title{
         font-size : 15pt;
         margin-bottom : 1px;
+    }
+    .work_intro .title_tw{
+        font-size : 12pt;
+        margin-bottom : 0px;
     }
     .work_intro .sub_title{
         font-size : 8.5pt;
