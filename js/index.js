@@ -151,7 +151,7 @@ $(document).ready(function(){
 
 });
 
-
+setLandingPageHeight();
 
 function navAnimation(){
     var anchor = Math.round($(window).scrollTop());
