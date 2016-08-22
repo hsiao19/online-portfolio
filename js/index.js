@@ -20,7 +20,7 @@ function cleanStringFormatResult(txt) {
 
 $(document).ready(function(){
     setLandingPageHeight();
-    $(window).resize(function() {
+    setInterval(function() {
         setLandingPageHeight();
     });
 
@@ -29,7 +29,6 @@ $(document).ready(function(){
     navAnimation();
     rwdNavChange();
     $(window).scroll(function() {
-        setLandingPageHeight();
         changeTitle();
         navAnimation(); 
         rwdNavChange();
@@ -151,8 +150,6 @@ $(document).ready(function(){
     });
 
 });
-
-setLandingPageHeight();
 
 function navAnimation(){
     var anchor = Math.round($(window).scrollTop());
