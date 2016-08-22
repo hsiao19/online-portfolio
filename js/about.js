@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('.sql').css('width', '25%');
         $('.javascript').css('width', '40%');
         $('.nodejs').css('width', '10%');
-        $('.html_css').css('width', '60%');
+        $('.html_css').css('width', '55%');
 
         $('.processing').css('width', '75%');
         $('.arduino').css('width', '20%');
