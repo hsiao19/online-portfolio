@@ -204,7 +204,7 @@
 
     /* intro */
     .work_intro .title{
-        font-size : 15pt;
+        font-size : 14pt;
         margin-bottom : 1px;
     }
     .work_intro .title_tw{
@@ -222,7 +222,7 @@
         margin-bottom : 65px;
     }
     .work_intro .intro_tw{
-        font-size : 9pt;
+        font-size : 10pt;
     }
 
     /* block2 */
@@ -242,7 +242,7 @@
         margin-bottom : 30px;
     }
     .work_intro .intro_detail_tw{
-        font-size : 9pt;
+        font-size : 10pt;
     }
     .work_intro .intro_detail .item_title {
         margin-left : 2%;
