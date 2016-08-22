@@ -4,9 +4,11 @@
     margin : auto;
     line-height: 22px;
 }
+
 #about .title{
     font-weight : bold;
 }
+
 #about .edu {
 
     padding-left: 20px;
@@ -94,6 +96,12 @@
     padding-top : 100px;
     width : calc(84% - 126px);
 }
+#about img{
+    position : relative;
+    float: right;
+    width : 150px;
+    margin-left : 20px;
+}
 #about .title{
     font-size : 18pt;
     margin-bottom : 40px;
@@ -131,6 +139,13 @@
         width : 84%;
         font-size : 11pt;
         
+    }
+    #about img{
+    position : relative;
+        float: none;
+        /*width : 100px;*/
+        margin-bottom: 50px;
+        margin-left : 0px;
     }
     #about .tw{
         font-size : 9.5pt;
