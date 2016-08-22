@@ -29,6 +29,7 @@ $(document).ready(function(){
     navAnimation();
     rwdNavChange();
     $(window).scroll(function() {
+        setLandingPageHeight();
         changeTitle();
         navAnimation(); 
         rwdNavChange();
