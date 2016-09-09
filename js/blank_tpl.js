@@ -71,7 +71,7 @@ $(document).ready(function(){
 
     // set cookie
     function setCookie(langCode){
-        Cookies.set('language', language, { expires: 7 });
+        Cookies.set('language', langCode, { expires: 7 });
     }    
   
     $('.tw_btn').click(function(){      
