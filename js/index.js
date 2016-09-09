@@ -1,4 +1,4 @@
-// string format -------------------------------------------------
+// string format ----------------------------------------------------------------------------------
 // usage : var fullName = 'Hello. My name is {0} {1}.'.format('FirstName', 'LastName');
 // http://kevintsengtw.blogspot.tw/2011/09/javascript-stringformat.html
 String.prototype.format = function () {
@@ -24,7 +24,7 @@ $(document).ready(function(){
         setLandingPageHeight();
     });
 
-    // nav animation / change site title -----------------------------
+    // nav animation / change site title ----------------------------------------------------------
     changeTitle();
     navAnimation();
     rwdNavChange();
@@ -34,7 +34,7 @@ $(document).ready(function(){
         rwdNavChange();
     });
 
-    // rwd menu -------------------------------------------------
+    // rwd menu -----------------------------------------------------------------------------------
     if( $('nav').hasClass('clicked') ) {
         $('.RwdNav').css('background-color', '#212222');
     }
@@ -80,7 +80,7 @@ $(document).ready(function(){
         }
     });
 
-    // jump to section animation --------------------------------
+    // jump to section animation -------------------------------------------------------------------
     $('a[href^="#"]').click(function(e) {
         e.preventDefault();
         var target = this.hash, $target = $(target);
@@ -91,29 +91,64 @@ $(document).ready(function(){
         });
     });
 
-    // switch language -----------------------------------------
-    Cookies.set('name', 'value', { expires: 7 });
-    $('.en').hide();
+    // switch language -----------------------------------------------------------------------------
+    // ---
+    function resetLang(){
+        $('.tw').hide();
+        $('.en').hide();
+    }
+
+    function setLang(langCode){
+        if (langCode == 'zh_TW'){
+            resetLang();
+            $('.tw_btn').addClass('active');
+            $('.tw').show();
+        }
+        else if(langCode == 'en'){
+            resetLang();
+            $('.en_btn').addClass('active');
+            $('.en').show();
+        }
+    }
+
+    // get language cookie and set language
+    var languageCookie = Cookies.get('language');
+    if (languageCookie){
+        setLang(languageCookie);
+    }
+    else{
+        setLang('zh_TW');
+    }
+
+    // set cookie
+    function setCookie(langCode){
+        Cookies.set('language', language, { expires: 7 });
+    }    
+  
     $('.tw_btn').click(function(){
         var anchor = Math.round($(window).scrollTop());
         var homeEnd = $('#home').offset().top + $('#home').height();
         if(anchor > homeEnd){
             $('.RwdNav .logo').removeClass('none_display');
         }
-        $('.en').hide();
-        $('.tw').show();        
+        
+        setLang('zh_TW');
+        setCookie('zh_TW');     
     });
+
     $('.en_btn').click(function(){
         var anchor = Math.round($(window).scrollTop());
         var homeEnd = $('#home').offset().top + $('#home').height();
         if(anchor > homeEnd){
             $('.RwdNav .logo').removeClass('none_display');
         }
-        $('.en').show();
-        $('.tw').hide();
+
+        setLang('en');
+        setCookie('en'); 
     });
 
-    // block fade in animation ---------------------------------
+
+    // block fade in animation ---------------------------------------------------------------------
     // http://www.web2feel.com/freeby/scroll-effects/index4.html
     // https://daneden.github.io/animate.css/
     jQuery('#works .block').addClass("hidden").viewportChecker({
@@ -123,7 +158,7 @@ $(document).ready(function(){
     });
 
 
-    // works filter --------------------------------------------
+    // works filter --------------------------------------------------------------------------------
     $('#works .sub_title .label').click(function(e){
         e.preventDefault();
         var clickedId = $(this).attr('id');
@@ -141,9 +176,12 @@ $(document).ready(function(){
         // https://daneden.github.io/animate.css/
         $.fn.extend({
             animateCss: function (animationName) {
-                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                $(this).addClass('animated ' + animationName).one(animationEnd, function() {
-                    $(this).removeClass('animated ' + animationName);
+                var animationEnd = 'webkitAnimationEnd ' + 
+                                   'mozAnimationEnd MSAnimationEnd ' + 
+                                   'oanimationend animationend';
+                $(this).addClass('animated ' + animationName
+                    ).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
                 });
             }
         });
@@ -213,7 +251,8 @@ function rwdNavChange(){
 
 function setLandingPageHeight(){
     var winHeight = $(window).height();
-    var homeContentHeight = $('#home img').height() + $('#home .home_words').height();
+    var homeContentHeight = $('#home img').height() + $('#home .home_words'
+                            ).height();
     if (homeContentHeight < winHeight){
         var heightAdjustment = (winHeight - homeContentHeight) / 2;
         $('#home').css("padding-top", "{0}px".format(heightAdjustment * 1.1));

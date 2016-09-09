@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // rwd menu --------------------------------------------
+    // rwd menu ----------------------------------------------------------------
     if( $('nav').hasClass('clicked') ) {
         $('.RwdNav').css('background-color', '#212222');
     }
@@ -40,20 +40,52 @@ $(document).ready(function(){
         }
     });
 
-    // switch language -----------------------------------------
-    $('.en').hide();
-    $('.tw_btn').click(function(){
-        $('.RwdNav .logo').removeClass('none_display');
-        $('.en').hide();
-        $('.tw').show();
-    });
-    $('.en_btn').click(function(){
-        $('.RwdNav .logo').removeClass('none_display');
-        $('.en').show();
+    // switch language ---------------------------------------------------------
+    // ---
+    function resetLang(){
         $('.tw').hide();
+        $('.en').hide();
+    }
+
+    function setLang(langCode){
+        if (langCode == 'zh_TW'){
+            resetLang();
+            $('.tw_btn').addClass('active');
+            $('.tw').show();
+        }
+        else if(langCode == 'en'){
+            resetLang();
+            $('.en_btn').addClass('active');
+            $('.en').show();
+        }
+    }
+
+    // get language cookie and set language
+    var languageCookie = Cookies.get('language');
+    if (languageCookie){
+        setLang(languageCookie);
+    }
+    else{
+        setLang('zh_TW');
+    }
+
+    // set cookie
+    function setCookie(langCode){
+        Cookies.set('language', language, { expires: 7 });
+    }    
+  
+    $('.tw_btn').click(function(){      
+        setLang('zh_TW');
+        setCookie('zh_TW');     
     });
 
-    // block fade in animation ---------------------------------
+    $('.en_btn').click(function(){
+        setLang('en');
+        setCookie('en'); 
+    });
+
+
+    // block fade in animation -------------------------------------------------
     // http://www.web2feel.com/freeby/scroll-effects/index4.html
     // https://daneden.github.io/animate.css/
     jQuery('.work_intro .block').addClass("hidden").viewportChecker({
