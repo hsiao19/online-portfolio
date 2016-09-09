@@ -120,10 +120,9 @@ $(document).ready(function(){
         setLang('zh_TW');
     }
 
-    Cookies.set('name', 'zh_TW', { expires: 7 });
-
     // set cookie
     function setCookie(langCode){
+        Cookies.remove('language');
         Cookies.set('language', language, { expires: 7 });
     }    
   
