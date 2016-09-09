@@ -92,6 +92,7 @@ $(document).ready(function(){
     });
 
     // switch language -----------------------------------------
+    Cookies.set('name', 'value', { expires: 7 });
     $('.en').hide();
     $('.tw_btn').click(function(){
         var anchor = Math.round($(window).scrollTop());
