@@ -14,9 +14,8 @@
 }
 .work_intro .main_pic, .work_intro .pic{
     position: relative;
-    width: auto;
-    height: auto;
-    max-width: 100%;
+    width: 100%;
+    min-height: auto;
 }
 .work_intro .intro a{text-decoration:underline;}
 .work_intro .intro a:link{color: #000;}
