@@ -13,8 +13,10 @@
     font-weight : bold;
 }
 .work_intro .main_pic, .work_intro .pic{
-    position : relative;
-    width : 100%;
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 .work_intro .intro a{text-decoration:underline;}
 .work_intro .intro a:link{color: #000;}
