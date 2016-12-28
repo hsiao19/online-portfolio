@@ -15,7 +15,6 @@ function getStringFormatPlaceHolderRegEx(placeHolderIndex) {
 function cleanStringFormatResult(txt) {
     if (txt == null) return "";
     return txt.replace(getStringFormatPlaceHolderRegEx("\\d+"), "");
-
 }
 
 $(document).ready(function(){

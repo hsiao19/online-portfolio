@@ -4,8 +4,8 @@ $(document).ready(function() {
   jQuery('#skills').viewportChecker({
       callbackFunction: function(elem, action){
         $('.python').css('width', '75%');
-        $('.java').css('width', '25%');
-        $('.php').css('width', '15%');
+        $('.java').css('width', '20%');
+        $('.php').css('width', '10%');
         $('.sql').css('width', '25%');
         $('.javascript').css('width', '40%');
         $('.nodejs').css('width', '10%');
@@ -13,9 +13,9 @@ $(document).ready(function() {
 
         $('.processing').css('width', '75%');
         $('.arduino').css('width', '20%');
-        $('.unity').css('width', '40%');
+        $('.unity').css('width', '30%');
         $('.maya').css('width', '15%');
-        $('.autocad').css('width', '40%');
+        $('.autocad').css('width', '30%');
         $('.sketchup').css('width', '50%');
         $('.resolume').css('width', '30%');
 
